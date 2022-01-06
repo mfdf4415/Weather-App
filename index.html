@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="FA.Pro.5.12.0/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather app by mohammad fathi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-row">
+            <div class="title">the.weather</div>
+            <div class="main-div">
+                <div class="degris" id="degree">05°</div>
+                <div class="city" id="city">London <br> <div class="date" id="date">09:57 - sonday ; 8 des '22</div> </div>
+                <div class="weather-icon">
+                    <div><i class="fal fa-cloud-showers-heavy"></i></div>
+                    <div class="text-weather" id="weatherDes">Rainy</div>
+                </div>
+            </div>
+        </div>
+        <div class="righte-row">
+            <div class="search-box" onclick="searchButton()">
+                <input type="text" placeholder="another location" id="input">
+                <div><i class="fal fa-search"></i></div>
+            </div>
+            <div class="locations">
+                <div class="loc-item" onclick="pressCitys('tehran')">tehran</div>
+                <div class="loc-item" onclick="pressCitys('hawler')">hawler</div>
+                <div class="loc-item" onclick="pressCitys('dobay')">dobay</div>
+                <div class="loc-item" onclick="pressCitys('new yuork')">new yuork</div>
+                <div class="loc-item" onclick="pressCitys('madrid')">madrid</div>
+                <div class="loc-item" onclick="pressCitys('los vegas')">los vegas</div>
+            </div>
+            <div class="deatls">
+                <div class="header-deatls">weather details</div>
+                <div class="det-div">
+                    <div class="det-item">cloudy</div>
+                    <span>70%</span>
+                </div>
+                <div class="det-div">
+                    <div class="det-item">humidiy</div>
+                    <span id="humidity">89%</span>
+                </div>
+                <div class="det-div">
+                    <div class="det-item">wind</div>
+                    <span id="windSpeed">8km</span>
+                </div>
+                <div class="det-div">
+                    <div class="det-item" >rain</div>
+                    <span>4mm</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: Montserrat;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/valentin-muller-bWtd1ZyEy6w-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.container .left-row {
+    flex-basis: 65%;
+    padding: 60px 80px;
+}
+
+.container .left-row .title {
+    font-size: 25px;
+}
+
+.container .left-row .main-div {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 500px;
+}
+
+.container .left-row .main-div .degris {
+    font-size: 150px;
+}
+
+.container .left-row .main-div .city {
+    font-size: 70px;
+    margin-left: 30px;
+    padding: 0;
+}
+
+.container .left-row .main-div .city .date {
+    display: flex;
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.container .left-row .main-div .weather-icon {
+    margin-left: 30px;
+    font-size: 70px;
+}
+
+.container .left-row .main-div .weather-icon .text-weather {
+    font-size: 20px;
+}
+
+.container .righte-row{
+    flex-basis: 35%;
+    background: rgba(7, 7, 7, 0.25);
+    /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding-left: 35px;
+    font-size: 18px;
+}
+
+.container .righte-row .search-box {
+    display: flex;
+    align-items: center;
+}
+
+.container .righte-row .search-box input {
+    flex: 1;
+    align-self: flex-end;
+    margin-right: 30px;
+    padding-top: 15px;
+    background: transparent;
+    border-bottom: 1px solid cadetblue;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.container .righte-row .search-box div {
+    background-color: cadetblue;
+    padding: 30px;
+    font-size: 25px;
+    color: #000;
+    cursor: pointer;
+}
+
+.container .righte-row .search-box div:hover {
+    background: rgb(143, 209, 211);
+}
+
+.container .righte-row .search-box div:active {
+    background: cadetblue;
+}
+
+.container .righte-row .locations {
+    padding: 35px 35px 35px 0;
+    margin-right: 35px;
+    border-bottom: 1px solid cadetblue;
+}
+
+
+.container .righte-row .locations .loc-item {
+    color: #a09f9f;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.container .righte-row .locations .loc-item:hover {
+    color: #fff;
+} 
+
+.container .righte-row .locations .loc-item:active {
+    color: #a09f9f;
+}
+
+.container .righte-row .deatls {
+    padding: 35px 35px 35px 0;
+    margin-right: 35px;
+    border-bottom: 1px solid cadetblue;
+}
+.container .righte-row .deatls .det-div {
+    display: flex;
+}
+
+.container .righte-row .deatls .header-deatls {
+    padding-bottom: 35px;
+}
+
+.container .righte-row .deatls .det-item{
+    color: #a09f9f;
+    padding: 10px 0;
+    display: flex;
+    flex: 1;
+}
